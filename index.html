@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Assignment 04 in JS">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Logan Rodriguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- title -->
+    <title>Salad Prices</title>
+        <!-- style -->
+         <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" />  
+  </head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Salads in JS</span>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+    <h1>Salad Prices in JavaScript</h1>
+    <p>Have you ever wanted to eat healthy, but you didn't know how much money salads are? Well you're sort of in luck, as this website will help determine the price of a salad that is customized by you.</p>
+    <p>There is no set in stone price for a salad meaning this is entirely based on the average salad price. You should not be expecting the exact price when going to your local salad-store. This will give you an idea on how much money should be brought. (in Canadian currency)</p>
+ <!-- Script -->
+  <script src="./js/script.js"></script>
+
+    <!-- function -->
+ <form action="javascript: answer()">
+    <!-- dropdown menu -->
+ <label for="size">Size:</label>
+    
+<select name="size" id="size">
+  <option value="small">Small</option>
+  <option value="large">Large</option>
+</select>
+    <!-- dropdown menu -->
+    <p>You have the option to purchase toppings for your salad. The options are croutons ($0.50), shredded cheese ($0.50), salad dressing ($0.50), and fruits ($0.50)</p>
+ <label for="toppings">How many toppings?:</label>
+    
+<select name="toppings" id="toppings">
+  <option value="none">None</option>
+  <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+</select>
+
+<!-- button -->
+<input type="submit" value="Submit">
+</form>
+<!-- image -->
+ <img src="images/salad.jpg" width="200" length ="400">
+        		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="answer">
+			</div>
+  </body>
+</html>
